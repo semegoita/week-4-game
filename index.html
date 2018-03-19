@@ -1,55 +1,30 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-
-<body>
-
-</body>
-
-</html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
     <title>Crystals Collector Game</title>
 </head>
-
 <body>
     <div class="container" style="background-image:url('assets/images/background.jpg');">
         <div class="jumbotron">
             <h1 style="text-align:center">CrystalsCollector!</h1>
         </div>
-        <div class="jumbotron" style="background-color:antiquewhite;">
-            <div class="container" style="text-align:justify" , "color:green;">
-
+        <div class="container">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">For Game Rules click Here</button>
+            <div id="demo" class="collapse" style="color:aliceblue;">
                 <ol>
                     <li>
                         <p>You will be given a random number at the start of the game.</p>
                     </li>
                     <li>
-                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-                        total score.</p>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                            to your total score.</p>
                     </li>
                     <li>
                         <p>You win the game by matching your total score to random number, you lose the game if your total score
@@ -64,30 +39,34 @@
 
                 </ol>
             </div>
-        </div>
+        </div><br>
         <div class="container">
             <div class="row">
                 <div class="col-xs-3">
-                    <img src="assets/images/crystal1.jpg"> </div>
-                <div class="col-xs-3">
-                    <img src="assets/images/crystal2.jpg">
+                    <img id="crystal1" src="assets/images/crystal1.jpg"> 
                 </div>
                 <div class="col-xs-3">
-                    <img src="assets/images/crystal3.jpg">
+                    <img id="crystal2" src="assets/images/crystal2.jpg">
                 </div>
                 <div class="col-xs-3">
-                    <img src="assets/images/crystal4.jpg">
+                    <img id="crystal3" src="assets/images/crystal3.jpg">
+                </div>
+                <div class="col-xs-3">
+                    <img id="crystal4" src="assets/images/crystal4.jpg">
                 </div>
             </div>
         </div>
         <br>
 
-        <div class="row">
-            <div class="col-md-4">
-                <p id="random" style="text-align:center; background-color:rgb(147, 223, 137); padding:40px; font-size:4em;"> random </p>
+        <div class="row" style="color:aliceblue;">
+            <div class="col-md-3">
+                <p id="random" style="text-align:center; font-size:2em;"> Your Score </p>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <p id="random" style="text-align:center; font-size:2em;"> random </p>
             </div>
 
-            <div class="col-md-4 col-md-offset-3" style="background-color:rgb(147, 223, 137); font-size:2em;">
+            <div class="col-md-3 col-md-offset-1" style="font-size:2em;">
                 <p id="display winner"> winner</p>
                 <p id="wins">wins</p>
                 <p id="loses">loses </p>
@@ -96,7 +75,10 @@
     </div>
 
 
-
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
