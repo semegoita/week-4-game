@@ -1,7 +1,7 @@
 
  $(document).ready(function(){
     var Random = Math.floor(Math.random()*101+19);
-    $("#winner").text(Random);
+    $("#random").text(Random);
 console.log(Random);
 var generatedNumbers = [];
 var userTotal;
@@ -47,6 +47,51 @@ function loser (){
     $("#loses").text(lost);
     reset();
 }
+// set up onclick for crystals
+$("#crystal1").on("click", function(){
+    total = total + generatedNumbers[0];
+    console.log("New total = " + total);
+    $("#number").text(total);
+        if (total === Random){
+            celeb();
+        } 
+        else if(total > Random){
+            loser();
+        }
+})
+$("#crystal2").on("click", function(){
+    total = total + generatedNumbers[1];
+    console.log("New total = " + total);
+    $("#number").text(total);
+        if (total === Random){
+            celeb();
+        } 
+        else if(total > Random){
+            loser();
+        }
+})
+$("#crystal3").on("click", function(){
+    total = total + generatedNumbers[2];
+    console.log("New total = " + total);
+    $("#number").text(total);
+        if (total === Random){
+            celeb();
+        } 
+        else if(total > Random){
+            loser();
+        }
+})
+$("#crystal4").on("click", function(){
+    total = total + generatedNumbers[3];
+    console.log("New total = " + total);
+    $("#number").text(total);
+        if (total === Random){
+            celeb();
+        } 
+        else if(total > Random){
+            loser();
+        }
+})
 // $("result").html('Random Result:'+ random);
 
 // for ( var i = 0; i<4;i++){
