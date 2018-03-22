@@ -1,6 +1,6 @@
 
  $(document).ready(function(){
-    var Random = Math.floor(Math.random()*101+19);
+    var Random = Math.floor(Math.random()*102+19);
     $("#random").text(Random);
 console.log(Random);
 var generatedNumbers = [];
@@ -24,8 +24,8 @@ randomNumbers();
 
 // reset function 
 function reset(){
-    Random=Math.floor(Math.random()*11+1);
-    $("winner").text(Random);
+    Random=Math.floor(Math.random()*102+19);
+    $("#random").text(Random);
     generatedNumbers=[];
     randomNumbers();
     total =0;
