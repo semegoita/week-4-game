@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,21 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
     <title>Crystals Collector Game</title>
 </head>
+
 <body>
     <div class="container" style="background-image:url('assets/images/background.jpg');">
         <div class="jumbotron">
-            <h1 style="text-align:center">CrystalsCollector!</h1>
+            <h1 style="text-align:center">Crystals Collector!</h1>
         </div>
         <div class="container">
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">For Game Rules click Here</button>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">For Game Rules Click Here</button>
             <div id="demo" class="collapse" style="color:aliceblue;">
                 <ol>
                     <li>
@@ -40,11 +47,12 @@
 
                 </ol>
             </div>
-        </div><br>
+        </div>
+        <br>
         <div class="container">
-            <div class="row">
+            <div class="row" id="crystals">
                 <div class="col-xs-3">
-                    <img id="crystal1" src="assets/images/crystal1.jpg"> 
+                    <img id="crystal1" src="assets/images/crystal1.jpg">
                 </div>
                 <div class="col-xs-3">
                     <img id="crystal2" src="assets/images/crystal2.jpg">
@@ -61,24 +69,29 @@
 
         <div class="row" style="color:aliceblue;">
             <div class="col-md-3">
-                <p id="random" style="text-align:center; font-size:2em;"> Your Score </p>
+                <p style="text-align:center; font-size:2em;">Your Number</p>
+                <br>
+                <p id="number" style="text-align:center; font-size:2em;"> </p>
             </div>
             <div class="col-md-3 col-md-offset-1">
-                <p id="random" style="text-align:center; font-size:2em;"> random </p>
+                <p style="text-align:center; font-size:2em;">Number To Match</p>
+                <p id="random" style="text-align:center; font-size:2em;"> </p>
             </div>
 
             <div class="col-md-3 col-md-offset-1" style="font-size:2em;">
-                <p id="display winner">winner </p>
-                <p>wins</p> <p id="wins"></p>
-                <p>loses</p> <p id="loses"> </p>
+                <!-- <p>winner</p> <p id="winner"> </p> -->
+                <p>Wins</p>
+                <p id="wins"></p>
+                <p>Loses</p>
+                <p id="loses"> </p>
             </div>
         </div>
     </div>
 
 
     <script src="assets/javascript/game.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 </body>
 
