@@ -92,21 +92,7 @@ $("#crystal4").on("click", function(){
             loser();
         }
 })
-// $("result").html('Random Result:'+ random);
-
-// for ( var i = 0; i<4;i++){
-//     var randomC = Math.floor(Math.random()*12+1);
-
-//     // var crystal = $("<div>");
-//     //     crystal.attr({
-//     //         "class": 'crystal',
-//     //         "data-random": 'random'
-//     //     });
-//     //$(".crystals").append(crystal);
-// }
-// $(".crystals").on('click', function(){
-//     alert('hi');
-// })
+// 
 // psuedo code
 // a game with 4 crystalls
 // every crystal need to have a random number between 1-12
